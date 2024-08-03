@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@react-three/drei": "^9.0.1",
+    "@react-three/drei": "^9.109.2",
     "@react-three/fiber": "^8.16.8",
     "@theatre/core": "^0.7.2",
     "@theatre/r3f": "^0.7.2",

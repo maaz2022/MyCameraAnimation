@@ -2,13 +2,17 @@
 import Scene from "@/components/Scene";
 import extension from "@theatre/r3f/dist/extension";
 import studio from "@theatre/studio";
+import { Suspense, useEffect } from "react";
 
 export default function Home() {
-  studio.extend(extension);
-  studio.initialize();
+  useEffect(() => {
+    studio.extend(extension);
+    studio.initialize();
+  }, []);
+
   return (
-  <div>
-    <Scene/>
-  </div>
+    <Suspense fallback={null}>
+      <Scene />
+    </Suspense>
   );
 }
